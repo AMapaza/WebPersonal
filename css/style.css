@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+:root{
+    --base-color: #284155c9;
+    --primary-color: #3d6180ba;
+    --secundary-color: #8b9eb4b5;
+    --tertiary-color: #a3b5d3ad;
+    --primary-text-color:#CEB5D3;
+    --secundary-text-color: #a6cfdc; 
+    --pointer-shadow-color: #0e2035;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Funnel',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../resources/image/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    position: absolute;
+    width: 95%;
+    height: 90%;
+    display: flex;
+}
+
+/* MENU */
+
+header .barra_menu {
+    width: 13%;
+    height: 100%;
+    background: var(--base-color);
+    color: var(--primary-text-color);
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 5px 10px 0px rgba(46, 46, 46, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+}
+
+header .barra_menu img {
+    width: 45%;
+    border-radius: 50%;
+    margin: 30%;
+    margin-bottom: 20px;
+}
+
+header .barra_menu h4 {
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+header .barra_menu ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    text-align: left;
+}
+
+header .barra_menu li {
+    font-weight: 650;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+header .barra_menu li.active, header .barra_menu li:hover {
+    background-color: var(--pointer-shadow-color);
+    color: var(--secundary-text-color);
+}
+
+/* PAGINAS */
+
+#home { /*Se muestra la pagina por defecto*/
+    border: none;
+    padding: 20px;
+    height: 100%;
+    width:87%;
+    position: absolute;
+    right: 0;
+    background: var(--primary-color);
+    color: var(--secundary-text-color);
+    box-shadow: 10px 5px 10px 1px rgba(46, 46, 46, 0.3);
+    border-radius: 0px 20px 20px 0px;   
+}
+
+#home h1{
+    color: var(--primary-text-color);
+}
+
+.tab-content {
+    border: none;
+    padding: 20px;
+    height: 100%;
+    width: 87%;
+    position: absolute;
+    right: 0;
+    background: var(--primary-color);
+    color: var(--secundary-text-color);
+    box-shadow: 10px 5px 10px 1px rgba(46, 46, 46, 0.3);
+    border-radius: 0px 20px 20px 0px;   
+    display: none; /* oculto por defecto */
+}
+
+/* Mostrar la sección activa */
+.tab-content.active {
+    display: block;
+}
