@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
 :root{
-    --base-color: #284155c9;
-    --primary-color: #3d6180ba;
-    --secundary-color: #8b9eb4b5;
-    --tertiary-color: #a3b5d3ad;
-    --primary-text-color:#CEB5D3;
+    --base-color: #284155cd;
+    --primary-color: #3d6180ce;
+    --secundary-color: #8b9eb4c7;
+    --tertiary-color: #a3b5d3ed;
+    --primary-text-color:#d9bfde;
     --secundary-text-color: #a6cfdc; 
     --pointer-shadow-color: #0e2035;
 }
@@ -13,7 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Funnel',Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Fredoka',Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -30,14 +30,16 @@ body {
 
 header {
     position: absolute;
-    width: 95%;
-    height: 90%;
+    width: 98%;
+    height: 95%;
     display: flex;
 }
 
 /* MENU */
 
 header .barra_menu {
+            border: 2px solid rgb(34, 0, 254);
+
     width: 13%;
     height: 100%;
     background: var(--base-color);
@@ -48,32 +50,39 @@ header .barra_menu {
     flex-direction: column;
     align-items: center;
     position: absolute;
-
 }
 
 header .barra_menu img {
-    width: 45%;
+            border: 2px solid rgb(0, 254, 38);
+
+    width: 55%;
     border-radius: 50%;
-    margin: 30%;
+    margin-top: 15%;
     margin-bottom: 20px;
 }
 
 header .barra_menu h4 {
-    font-size: large;
-    padding-bottom: 10px;
+            border: 2px solid rgb(254, 0, 0);
+
+    font-size: larger;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+header .barra_menu h4:hover {
+    font-size:130%;
 }
 
 header .barra_menu ul {
+        border: 2px solid rgb(112, 103, 103);
     list-style: none;
     width: 100%;
-    height: 100%;
-    padding: 5px;
     text-align: left;
 }
 
 header .barra_menu li {
-    font-weight: 650;
-    padding: 10px;
+            border: 2px solid rgb(57, 8, 8);
+    font-weight: 500;
+    padding: 5px;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -81,6 +90,12 @@ header .barra_menu li {
 header .barra_menu li.active, header .barra_menu li:hover {
     background-color: var(--pointer-shadow-color);
     color: var(--secundary-text-color);
+}
+
+header .barra_menu .frase{
+    border: 2px solid black;
+    font-weight: 450;
+    width: 100%;
 }
 
 /* PAGINAS */
