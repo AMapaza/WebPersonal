@@ -31,14 +31,13 @@ body {
 header {
     position: absolute;
     width: 98%;
-    height: 95%;
+    min-height: 95%;
     display: flex;
 }
 
 /* MENU */
 
 header .barra_menu {
-            border: 2px solid rgb(34, 0, 254);
 
     width: 13%;
     height: 100%;
@@ -53,7 +52,6 @@ header .barra_menu {
 }
 
 header .barra_menu img {
-            border: 2px solid rgb(0, 254, 38);
 
     width: 55%;
     border-radius: 50%;
@@ -62,7 +60,6 @@ header .barra_menu img {
 }
 
 header .barra_menu h4 {
-            border: 2px solid rgb(254, 0, 0);
 
     font-size: larger;
     margin-bottom: 10px;
@@ -73,16 +70,14 @@ header .barra_menu h4:hover {
 }
 
 header .barra_menu ul {
-        border: 2px solid rgb(112, 103, 103);
     list-style: none;
     width: 100%;
     text-align: left;
 }
 
 header .barra_menu li {
-            border: 2px solid rgb(57, 8, 8);
     font-weight: 500;
-    padding: 5px;
+    padding:8px;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -92,8 +87,10 @@ header .barra_menu li.active, header .barra_menu li:hover {
     color: var(--secundary-text-color);
 }
 
-header .barra_menu .frase{
-    border: 2px solid black;
+header .frase{
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
     font-weight: 450;
     width: 100%;
 }
@@ -102,7 +99,7 @@ header .barra_menu .frase{
 
 #home { /*Se muestra la pagina por defecto*/
     border: none;
-    padding: 20px;
+    padding: 40px;
     height: 100%;
     width:87%;
     position: absolute;
@@ -119,7 +116,7 @@ header .barra_menu .frase{
 
 .tab-content {
     border: none;
-    padding: 20px;
+    padding: 40px;
     height: 100%;
     width: 87%;
     position: absolute;
@@ -134,4 +131,37 @@ header .barra_menu .frase{
 /* Mostrar la sección activa */
 .tab-content.active {
     display: block;
+}
+
+.tab-info-personal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 100%;
+}
+
+.sombre_mi_text {
+    border-radius: 15px;
+    margin: 3px;
+    padding: 10px;
+}
+.datos_personales {
+    border-radius: 15px;
+    margin: 3px;
+    padding: 10px;
+}
+.datos_personales h3{
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 8px;
+
+}
+.datos_personales p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.datos_personales p strong{
+    font-weight: 600;
 }
