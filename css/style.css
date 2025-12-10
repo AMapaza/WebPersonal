@@ -153,26 +153,44 @@ header .barra_menu li.active, header .barra_menu li:hover {
     }
 
     h3{
-            color: var(--primary-text-color);
-            font-weight: 600;
-            font-size: larger;
-            margin-bottom: 8px;
-            margin-top: 20px;
+        color: var(--primary-text-color);
+        font-weight: 600;
+        font-size: larger;
+        margin-bottom: 8px;
+        margin-top: 20px;
         }
-
+    p{
+        width: 71%;
+    }
     .sombre_mi_text{
         margin-top: 20px;
     }
     .datos_personales {
         p {
             margin-bottom: 8px;
-            line-height: 1.4;
         }
     }
 }
 .datos_personales p strong{
     font-weight: 600;
 }
+.fotoHome {
+    position: absolute;
+    right: 40px;         /* distancia del borde derecho */
+    top: 40px;           /* distancia desde arriba */
+    width: 25%;
+    height: 85%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    border: solid 3px var(--base-color)
+}
+.fotoHome:hover{
+    transform: scale(1.03);
+    border: solid 3px var(--base-color);
+
+}
+
 
 /*FAMILIA*/
 
@@ -232,12 +250,7 @@ header .barra_menu li.active, header .barra_menu li:hover {
         }
     }
 
-}
-
-
-
-
-
+}   
 
 /*MUSICA*/
 
